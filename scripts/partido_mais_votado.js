@@ -217,7 +217,7 @@ function votosPorPartido() {
 			.attr("x", 0 - (h / 2))
 			.attr("dy", ".1em")
 			.style("text-anchor", "middle")
-			.text("Total de votos (em milhares)");
+			.text("Colunas - Total de votos (em milhares)");
 
 		svg.append("g")
 			.attr("class", "y axis")
@@ -229,7 +229,7 @@ function votosPorPartido() {
 			.attr("x", 0 - (h / 2))
 			.attr("dy", "-1em")
 			.style("text-anchor", "middle")
-			.text("Percentual de votos válidos");
+			.text("Linha - Percentual acumulado de votos válidos");
 	});
 }
 
