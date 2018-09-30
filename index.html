@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/icon.png" type="image/x-icon" />
+	<title>Eleições 2014 | Votos por Partido</title>
+
+	<!-- <script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script> -->
+	<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+	<script type="text/javascript" src="scripts/partido_mais_votado.js"></script>
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="cabecalho">
+		<div class="titulo">
+			Eleições 2014 - Votos por Partido
+		</div>
+		<div id="busca">
+			<select id="cargo" class="form-control">
+				<option value="">Selecione o cargo</option>
+				<option value="dep-estadual">Deputado Estadual/Distrital</option>
+				<option value="dep-federal">Deputado Federal</option>
+				<option value="senador">Senador</option>
+				<option value="governador">Governador (1º Turno)</option>
+				<option value="presidente">Presidente (1º Turno)</option>
+			</select>
+			<select id="UF" class="form-control">
+				<option value="">Selecione a UF</option>
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraiba</option>
+				<option value="PR">Paraná</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="SP">São Paulo</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			</select>
+			<div id="button-busca">
+				<button class="btn btn-light" onclick="votosPorPartido()">
+					Buscar
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="chart" align="center"></div>
+</body>
+<footer>
+	Gabriel Pereira de Oliveira &emsp; | &emsp; 2015004160 &emsp; | &emsp; Visualização de Dados - 2018/2 &emsp; | &emsp; DCC/UFMG
+</footer>
+</html>
